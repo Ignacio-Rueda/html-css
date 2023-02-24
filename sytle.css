@@ -1,0 +1,503 @@
+/*Importamos un estilo de letra de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200;1,900&family=Ubuntu:ital,wght@0,700;1,300&display=swap');
+*{
+    box-sizing: border-box;/*La propiedad box-sizing indica cómo se deben calcular las medidas de un elemento, CSS por defecto
+    considera que el ancho y el alto de la caja son las propiedades width y height, en el momento que se añada un padding o un border
+    el tamaño de renderizado de la caja será: width+padding+border, esto hace dificil calcular de forma predecible  el ancho o alto de nuestros 
+    elementod si tienen padding o border. Por eso empleamos: border-box:Hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja
+    y no lo sumen posteriormente.*/
+}
+
+/*Eliminamos espacio inicial*/
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* Inicialmente ocultamos el contendido de Servicio y Contacto para que no se muestre en la pantalla*/
+#Servicios{
+    display:none;
+}
+#Contacto{
+    display:none;
+}
+
+
+
+/**************************************************************ENCABEZADO**********************************************************************************/
+/*Dado que no todos los nombres de colores son admitidos en el estándar, utilizo el valor RGB*/
+/*Eliminamos subrayado enlaces del menú de navegación*/
+header nav a{
+    text-decoration: none;/*Elimina subrayado enlace*/
+    color:rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;/*Aplicamos letra importada al texto del menú de navegación*/
+    
+}
+/*Mostramos el menú (lista) en una sola línea*/
+header li{
+    display:inline-block;/*display block: hace que el comportamiento del elemento sea como un bloque, 
+                        display inline: el elemento se renderizará en linea con otros elementos
+                        display inline-block: el elemento tendrá un comportamiento mezcla entre los dos anteriores*/
+    font-size: 30px;
+    width: 150px;/*Ancho de los "li" que conforman el menú*/
+}
+nav ul li{
+   text-align: center;/*Nos permite centrar el texto del menú con respecto al elemento que lo contiene */
+}
+/*Empleamos la pseudo clase :hover para que se produzcan los efectos solicitados en el ejercicio*/
+header li:hover{
+    border:1px solid white;/*Pasamos el ratón por encima y cambia color*/
+    background-color:rgb(81,191,193);
+    border-radius: 8px;
+}
+
+/*Damos color y tamaño al header*/
+header {
+    width: 100%;/*He dejado que la barra ocupe el 100% del ancho de la página porque creo que queda mejor, si se 
+    quisiera dejar espacios a los lados, simplemente reducir el porcentaje y utilizar "margin:auto" para centrar el header*/
+    background-color: rgb(255,80,0);
+    overflow:hidden;/*En lugar de declarar una altura en px, se ajusta al contenido de la barra de navegación, tomo esta
+    decisión porque si se reduce el tamaño de la pantalla en ocasiones se desborda el contenido*/
+}
+/*Damos color y tamaño a nav*/
+nav{
+    float:left;
+    margin-top: 10px;
+    width: 80%;
+    background-color: rgb(255,80,0);
+    text-align: center;
+}
+
+/*Damos color y ubicación a logotipo*/
+#areaLogotipo{
+    width: 18%;
+    margin-left: 2%;
+    float: left;
+    margin-top:10px;
+}
+
+#areaLogotipo h2{
+    padding-right:3px;
+    float:left;
+    color:rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;/*Aplicamos letra importada al logotipo*/
+}
+#areaLogotipo img{
+    padding-bottom: 10px;
+    float:left;
+    height: 40px;
+}
+#areaLogotipo a{
+    text-decoration: none;/*Tanto el texto, como la imagen del logo están dentro de un elemento <a> que nos permite definir un enlace, en este caso para poder volver 
+    a la página de inicio, pulsando sobre el logo */
+}
+
+/**************************************************************INICIO**********************************************************************************/
+
+
+/*////////////////////INICIO--> BANNER/////////////////////////////*/
+
+#Inicio{
+    height: auto;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#Inicio #banner{
+
+    width: auto;
+    background-image: url(./img/trabajadoresempresa.jpg);/*Utilizo una imagen de fondo*/
+    background-size: 100% 100%;/*Se establecen las dimensiones de la image de fondo*/
+    min-height: 100vh;/*Ocupa como mínimo toda la pantalla*/
+}
+#Inicio #localizador{
+    position: absolute;
+    top:200px;
+    left:0px;
+    width: 50%;
+    height: 350px;
+
+}
+
+#Inicio form{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 350px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    margin: auto;
+}
+#Inicio form h3{
+    text-align: center;
+    font-family:sans-serif;
+}
+#Inicio form table{
+    font-family:'Ubuntu', sans-serif;
+    color:rgb(255,80,0);
+    margin: auto;
+    padding-top: 15px;
+    text-align: center;
+}
+#Inicio form table input{
+    font-size: 30px;
+    border-radius: 5px;
+    width: 200px;
+}
+#Inicio form table input:hover{
+    border:1px dotted  black;
+}
+#Inicio form table button{
+    border:none;
+    width: auto;
+    padding: 5px;
+    font-size: 30px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family:'Ubuntu', sans-serif;
+    color:white;
+    background-color:rgb(255,80,0);
+}
+#Inicio form table button:hover{
+    cursor:pointer;/*Aparece una mano cuando pasamos sobre el botón*/
+}
+
+/*////////////////////INICIO--> PÁRRAFO PRESENTACIÓN/////////////////////////////*/
+
+#descEmpresa{
+    
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    overflow: hidden;
+    color: black;
+}
+
+#descEmpresa #descripcion{
+    float:left;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow:auto;/*Los navegadores de Escritorio como Firefox y Chrome proporcionan barras de desplazamiento si hay contenido excedente*/
+    font-size: 25px;
+    line-height: 130%;/*Determino el espacio entre líneas*/
+}
+#descEmpresa p{
+    text-align:center;
+}
+#descEmpresa p b{
+    color:rgb(255,80,0);
+}
+
+#Productos {
+    background-color: rgb(60,60,60);
+    height: auto;
+    border-bottom: 1px solid rgb(60,60,60);
+}
+
+#Productos #imagenesServicios a{
+    text-decoration: none;
+}
+#Productos #imagenesServicios a:visited{
+    color: rgb(0,0,0);
+}
+
+
+/*posicionamos PRODUCTOS*/
+#Productos h2{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(255,80,0);
+}
+#Productos #imagenesServicios{
+    text-align: center;/*Como las imágenes se comportan como elementos en bloque, las puedo centrar con text-align*/
+    margin-top:10px;
+    overflow:hidden;/*En lugar de aplicar altura, aplicamos desbordamiento oculto y esto le dará al div la altura de los elementos secundarios.*/
+}
+#Productos #imagenesServicios a:link{/*Enlace no visitado*/
+    color:rgb(0,0,0);
+}
+#Productos #imagenesServicios a:visited{/*Enlace  visitado*/
+    color:rgb(0,0,0);
+}
+#Productos #imagenesServicios a:active{/*Enlace cuando se activa*/
+    color: rgb(255,80,0);
+}
+
+#Productos #imagenesServicios img{
+    width: 100px;
+    border:2px solid rgb(0,221,216);
+    border-radius: 10px;/*Redondeo las esquinas*/
+}
+
+#Productos #imagenesServicios figure{
+    display: inline-block;/*Hago que las imágenes queden alíneadas en una fila*/
+    margin-bottom: 2px;
+    margin-left: 15px;
+}
+#Productos #imagenesServicios figure figcaption{
+    text-align: center;
+    color:white;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+#Productos #imagenesServicios img:hover{
+    opacity: 0.4;/*Al passar el ratón por encima oscurecemos la imagen*/
+}
+/*//////////////////// INICIO--> LISTA ORDENADA A DOS NIVELES /////////////////////////////*/
+#Productos #lista{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    font-size: 22px;
+    width: 25%;/*Determino un % de anchura para la caja contenedora para poder aplicar los márgenes izquierdo y derecho*/
+}
+
+/* En este apartado creamos un contador e indicamos que no vamos a utilizar
+la numeración de las listas implementadas en html*/
+#Inicio ol {
+    counter-reset: primerNivel;
+    list-style-type: none;
+    padding-top: 2px;
+}
+/*En este apartado creamos otro contador*/
+#Inicio{
+    counter-reset:segundoNivel;
+}
+/*Incrementamos una unidad cada vez que estemos dentro de un lista ordenada de una lista ordenada*/
+#Inicio ol ol{
+    border-top:1px solid rgb(255,80,0);
+    counter-increment:segundoNivel;  
+    padding-left: 10px;
+    padding-top:5px;/*Con respecto al titulo del primer nivel*/
+    padding-bottom: 5px;/*Con respecto al titulo del primer nivel*/
+    overflow-x:auto;/*Si se produce desbordamiento, en cada lista, aparecerá scroll x (plano cartesiano))*/
+}
+/*Incrementamos una unidad cada vez que estemos en una lista de una lista ordenada*/
+#Inicio ol li{
+    padding-top: 5px;/*Con respecto a los elementos de la lista de segundo nivel*/
+    counter-increment:primerNivel;
+}
+/*Insertamos el valor acumulado del contador primerNivel a los elementos de una lista*/
+#Inicio ol li:before{
+    content: counter(primerNivel)".";
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+/*Insertamos los valores a la sublista, hemos aprovechado el contador primerNivel porque llegados a este punto
+acumula también los valores necesarios para este apartado*/
+#Inicio ol li ol li:before{
+    content:counter(segundoNivel,decimal)"." counter(primerNivel,lower-alpha)".";
+    border-radius: 10px;
+    font-size: 16pt;
+
+    
+}
+/*
+
+/**************************************************************SERVICIOS**********************************************************************************/
+#Servicios {
+    background-color: rgb(60,60,60);
+    width: auto;
+    text-align: center;
+    min-height: calc(100vh - 118px);/*Uilizo la función calc para ajustar el pie de página al final de la pantalla*/
+    overflow: hidden;/*Para el caso de reducir la pantalla o producirse desbordamiento*/      
+}
+#Servicios h3{
+    color:rgb(255,80,0);
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+#Servicios h4{
+    color:rgb(255,80,0);
+    padding-top:  10px;
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+#Servicios h5{
+    color:rgb(255,80,0);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+#Servicios #galeriaServicios img,#galeriaProductos img{
+    filter: grayscale(40%);/*Oscurecer la imagen*/
+    border-radius: 50%;/*Hacer un círculo*/
+    width:200px;
+    height:200px;
+    border:1px dotted rgb(0,0,0);  
+}
+
+#Servicios #galeria figcaption{
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+#Servicios #galeriaServicios p, #galeriaProductos p{
+    text-align: center;
+    padding-bottom: 5px;
+    color:white;
+    font-size: 22px;
+}
+#Servicios #galeriaServicios img:hover, #galeriaProductos img:hover{/*Efectos al pasar el ratón por encima*/
+    border:3px solid rgb(255,80,0);
+    filter: grayscale(5%);  
+    cursor: pointer;  
+    border-radius: 50%;/*Hacer un círculo*/
+    width:300px;
+    height:300px;
+    transition-delay: 0.3s;/*Retraso el tiempo en el que se amplía la imagen*/
+}
+
+#Servicios #galeriaServicios{
+    float:left;/*Situo el div a la izquierda */
+    margin-left:20%;
+    margin-bottom: 1px;
+}
+
+#Servicios #galeriaProductos{
+    float: right;
+    margin-right: 20%;
+    margin-bottom: 1px;
+}
+/**************************************************************CONTACTO**********************************************************************************/
+#Contacto{
+    min-height: calc(100vh - 116px);
+    width: 100%;
+    background-color:rgb(60,60,60);
+    text-align: center;
+}
+
+#Contacto figcaption{
+    display:inline;/*Para situar en la mísma línea el logo y el texto*/
+}
+
+#Contacto .registro{
+    width: 600px;
+    margin-top: 5px;
+    font-size: 14pt;
+    font-family: 'Ubuntu', sans-serif; 
+    text-decoration: none;
+    background-color:rgb(242,243,245);
+    border:none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Contacto .registro a{
+    text-decoration: none;
+}
+
+#Contacto .registro a:visited{
+    color: rgb(0,0,0);
+}
+#Contacto .registro img{
+    width: 20px;
+    margin-right: 20px;
+}
+#Contacto .registros{/*Para aplicar un margen al contenedor de los diferentes tipos de registros*/
+    margin-bottom: 20px;
+}
+
+#Contacto label{
+    font-family: 'Ubuntu', sans-serif; 
+}
+#Contacto form{
+    padding-top: 5%;
+    width: auto;
+    padding-bottom: 1%;
+}
+#Contacto table{
+    padding-top: 15px;
+    border-top:1px solid rgb(255,80,0);
+    margin:auto;
+    color:white;
+}
+
+#Contacto form input{
+    width: 450px;
+    margin-left: 25px;
+    margin-top: 5px;
+    font-size: 14pt;
+    background-color:rgb(243,243,244);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#Contacto form input:hover{
+    background-color:rgb(255, 255, 255);
+}
+#Contacto form .respuesta input{
+    width: 25px;
+    margin-left: 25px;
+    
+}
+#Contacto form .respuesta #email{
+    margin-left: -270px;
+}
+#Contacto form .respuesta #tfno{
+    margin-left: -255px;
+}
+#Contacto form textarea{
+    width: 450px;
+    margin-left: 25px;
+    margin-top: 5px;
+    background-color:rgb(243,243,244);
+    padding: 10px 20px;
+    border:none;
+    border-radius: 10px;
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+#Contacto form textarea:hover{
+    background-color:rgb(255, 255, 255);
+    border:solid 1px rgb(255,80,0);
+    transition-delay: 0.5s;
+}
+
+/**************************************************************PIE DE PÁGINA**********************************************************************************/
+
+
+footer #piePagina {
+    height: auto;
+    width: 100%;
+    background-color: rgb(255,80,0);
+    overflow: hidden;/*Necesario porque si reduzco tamaño página se desborda contenido y no se ve el color de fondo*/
+    font-size: 12pt;
+}
+
+footer #infoEmpresa{
+    float: left;
+    width: auto;
+    background-color: rgb(255,80,0);   
+    margin-left: 5%;
+}
+footer #infoEmpresa #logoMail{
+    margin-left: 25px;
+}
+footer #infoAutor{
+    float: right;
+    width: auto;
+    margin-right: 5%;
+    background-color: rgb(255,80,0);
+}
+footer img{
+    width: 20px;
+}

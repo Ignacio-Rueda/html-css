@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Reparto de paquetería urgente"/>
+    <meta name="keywords" content="paquetería, reparto, urgente"/><!--Palabras clave para encontrar la web-->
+    <link rel="stylesheet" href="sytle.css">
+    <title>Llega ya</title>
+</head>
+<body>
+<!--************************CAPA ENCABEZADO**************************************************************************************************************************************-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="return ShowContent('Inicio');">Inicio</a></li>
+                <li><a href='#' onclick="return ShowContent ('Servicios');">Servicios</a></li>
+                <li><a href='#' onclick="return ShowContent ('Contacto');">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="areaLogotipo">
+            <a href="index.html"><h2>Llega ya</h2></a>
+            <a href="index.html"><img src="./img/logo.png" alt="logo" id="logotipo"></a>
+            
+        </div>
+    </header>
+<!--************************CAPA CONTENIDO***************************************************************************************************************************************-->
+
+    <div id="contenido">
+<!--*************************PÁGINA INICIO**************************************************************************************************-->
+        <div id="Inicio">
+            <div id="banner">
+                <div id="localizador">
+                    
+                    <form action="url donde envian datos formulario" method="get o post">
+                        <h3>Localiza tu paquete</h3>
+                        <table>
+                            <tr>
+                                <td><label for="usuario">Usuario</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="usuario"></input></td>
+                            </tr>
+                            <tr>
+                                <td><label for="contraseNa">Contraseña</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" id="contraseNa"></input></td>
+                            </tr> 
+                            <tr>   
+                                <td><label for="numeroPedido">Número Pedido</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="numeroPedido"></input></td>
+                            </tr>    
+                            <tr>
+                                <td><button type="button">Buscar</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div id="descEmpresa">
+                <div id="descripcion">
+                    <p>El grupo Llegaya de capital 100% andaluz, nace en 1989.Es la marca de transporte de referencia en cuanto a <b>calidad, rapidez e 
+                    innovación</b> se refiere. Llegaya transporta cualquier tipo de mercancía,además también ofrecemos servicios de logística adicionales.
+                    Nuestra clave reside en la importancia que le dedicamos al transporte en equipo.Los diferentes departamentos que 
+                    conforman Legaya están sincronizados porque sabemos que la clave es una entrega rápida y de calidad.
+                    Si sus encargos pueden estar limitados por el lugar, Llegaya se ocupa de las formalidades de peaje o del  posible 
+                    almacenamiento temporal de sus mercancías.Disponemos de diferentes almacenes (algunos de ellos con más de 18.800 m<sup>2</sup>)
+                    Llegaya le ayuda a garantizar un transcurso general sin obstáculos.</p>
+                </div>
+            </div>
+            <div id="Productos">
+                <h2>Nuestros Servicios</h2>
+                <div id="imagenesServicios">
+                    <figure>
+                        <a href="index.html#tipoEnvio"><img src="./img/tipoenvio.png" alt="tipoEnvio"/></a>
+                        <a href="index.html#tipoEnvio"><figcaption>Tipo de envío</figcaption></a>
+                    </figure>     
+                    <figure>
+                        <a href="index.html#tipoProductos"><img src="./img/productos.png" alt="tipoProductos"/></a>
+                        <a href="index.html#tipoProductos"><figcaption>Tipo de productos</figcaption></a>
+                    </figure>
+
+                    <figure>
+                        <a href="index.html#tipoServicio"><img src="./img/tiposervicio.png" alt="tipoServicio"/></a>
+                        <a href="index.html#tipoServicio"><figcaption>Tipo de servicios</figcaption></a>
+                    </figure>
+
+                    <figure>
+                        <a href="index.html#tipoMudanzas"><img src="./img/mudanza.png" alt="tipoMudanzas"/></a>
+                        <a href="index.html#tipoMudanzas"><figcaption>Mudanzas</figcaption></a>
+                    </figure>
+
+                    <figure>
+                        <a href="index.html#addValor"><img src="./img/addvalor.png" alt="addValor"/></a>
+                        <a href="index.html#addValor"><figcaption>Valor añadido</figcaption></a>
+                    </figure>
+
+                    <figure>
+                        <a href="index.html#tipoFarmacia"><img src="./img/farmacia.png"alt="tipoFarmacia"/></a>
+                        <a href="index.html#tipoFarmacia"><figcaption>Pharma</figcaption></a>
+                    </figure>
+                </div>
+                <div id="lista"><ol>
+                    <li id="tipoEnvio">Tipo de envío
+                        <ol>
+                            <li>Envío urgente</li>
+                            <li>Envío ordinario</li>
+                            <li>Envío económico</li>
+                            <li>Envío ligero</li>
+                            <li>Envío en frío</li>
+                        </ol>
+                    </li>
+                    <li id="tipoProductos">Productos
+                        <ol>
+                            <li>Cartas y tarjetas postales</li>
+                            <li>Cartas certificadas</li>
+                            <li>Tarifa Plana de Carta Certificada</li>
+                            <li>Tarjeta postal</li>
+                            <li>Carta digital</li>
+                            <li>Paquete Azul</li>
+                            <li>Bolsas Prepagadas</li>
+                            <li>Bolsas Prepagadas</li>
+                        </ol>
+                    </li>
+                    <li id="tipoServicio">Tipo Servicio
+                        <ol>
+                            <li>Nacional (península)</li>
+                            <li>Nacional (Baleares/Canarias/Ceuta y Melilla)</li>
+                            <li>Internacional exprés</li>
+                            <li>EuroLlegaya</li>
+                            <li>EuroLlegaya lowcost</li>
+                            <li>EuroLlegaya premium</li>
+                            <li>EuroLlegaya pluspack</li>
+                        </ol>
+                    </li>
+                    <li id="tipoMudanzas">Mudanzas
+                        <ol>
+                            <li>Mudanzas locales</li>
+                            <li>Mudanzas regionales</li>
+                            <li>Mudanzas nacionales</li>
+                            <li>Mudanzas internacionales</li>                    
+                        </ol>
+                    </li>
+                    <li id="addValor">Valor añadido
+                        <ol>
+                            <li>Digitalización de albaranes de entrega</li>
+                            <li>Albaranes propios de clientes</li>
+                            <li>Llega ya card</li>
+                            <li>Alertas de información</li>    
+                            <li>Mi entrega preferida</li>  
+                            <li>Contacto cero</li>                    
+                        </ol>
+                    </li>
+                    <li id="tipoFarmacia">Llegaya pharma
+                        <ol>
+                            <li>Llegaya pharma 2º - 8º</li>
+                            <li>Llegaya pharma domicilio</li>          
+                        </ol>
+                    </li>
+                </ol></div>
+                
+            </div>
+        </div>
+        <!--************************PÁGINA SERVICIOS****************************************************-->
+        <div id="Servicios">
+        <h3>Servicios / Productos</h3>
+        
+            <div id=galeriaServicios>
+                <h4>Servicios</h4>
+                <figure>
+                    <img title="Trasnporte marítimo." src="./img/transportemaritimo.jpg" alt="transporte Maritimo">
+                    <figcaption><h5>Transporte marítimo.</h5></figcaption>
+                    <p>Contenedores de cualquier capacidad.</p>
+                </figure>
+                <figure>
+                    <img title="Transporte Europeo."src="./img/transporteeuropeo.jpg" alt="transporte Europeo">
+                    <figcaption><h5>Transporte sectorial.</h5></figcaption>
+                    <p>Cargas y descargas en toda Europa.</p>
+                </figure>
+                <figure>
+                    <img title="Entregas a industria."src="./img/entregasindustria.jpg" alt="entregasIndustria">
+                    <figcaption><h5>Servicios especiales a medida.</h5></figcaption>
+                    <p>Servicio 24 horas para la industria.</p>
+                </figure>
+                <figure>
+                    <img title="Entregas personalizadas." src="./img/entregaspersonalizadas.jpg" alt="entregasPersonalizadas">
+                    <figcaption><h5>Entregas personalizadas.</h5></figcaption>
+                    <p>Elija el formato de su paquete y la hora de entrega.</p>
+                </figure>
+                
+            </div>
+            <div id=galeriaProductos>
+                <h4>Productos</h4>
+                <!--Empleo el atributo title porque mejora la accesibilidad y el navegador muestra información al pasar el ratón por encima-->
+                    <figure>
+                        <img title="Sobres"src="./img/sobres.jpg" alt="sobres">
+                        <figcaption><h5>Sobres.</h5></figcaption>
+                        <p>Disponemos de sobres de cualquier dimesión.</p>
+                    </figure>
+                    <figure>
+                        <img title="Paquetes"src="./img/paquetes.jpg" alt="paquetes">
+                        <figcaption><h5>Paquetes.</h5></figcaption>
+                        <p>Encuentra el formato que buscas.</p>
+                    </figure>
+                    <figure>
+                        <img title="Recipientes para líquidos."src="./img/cajasliquido.jpg" alt="cajasLiquido">
+                        <figcaption><h5>Recipientes para líquidos.</h5></figcaption>
+                        <p>Protege tu producto al máximo.</p>
+                    </figure>
+                    <figure>
+                        <img title="Transportín para mascotas"src="./img/transportin.jpg" alt="transportin">
+                        <figcaption><h5>Transportín para mascotas.</h5></figcaption>
+                        <p>Jaula para el traslado de pequeñas mascotas.</p>
+                    </figure>
+            </div>    
+        </div>
+    
+        <!--************************PÁGINA CONTACTO****************************************************-->
+        <div id="Contacto">
+          
+            <form action="url donde envían datos formulario" method="get o post">
+                <div class="registros">
+                    <div class="registro">
+                        <figure>
+                            <a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank"><img title="logoGoogle" src="./img/iconogoogle.png" alt="Google"></a>
+                            <a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank"><figcaption>Inicia sesión con Google</figcaption></a>
+                        </figure>
+                    </div>
+                    <div class="registro">
+                            <figure>
+                                <a href="https://es-es.facebook.com/" target="_blank"><img title="logoFacebook" src="./img/facebook .png" alt="Facebook"></a>
+                                <a href="https://es-es.facebook.com/" target="_blank"><figcaption>Inicia sesión con Facebook</figcaption></a>
+                            </figure>
+                    </div>
+                    <div class="registro">
+                            <figure>
+                                <a href="https://www.icloud.com/" target="_blank"><img title="logoApple" src="./img/apple.png" alt="Apple"></a>
+                                <a href="https://www.icloud.com/" target="_blank"><figcaption>Inicia sesión con Apple</figcaption></a>
+                            </figure>
+                    </div>
+                </div>
+                <table>
+                   
+                    <tr>
+                        <td><label for="name">Nombre</label></td>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">email</label></td>
+                        <td><input type="email" id="mail"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tfno">Teléfono</label></td>
+                        <td><input type="tel" id="tfno"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ciudad">Ciudad</label></td>
+                        <td><input type="text" id="ciudad"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="comentarios">Comentarios</label></td>
+                        <td><textarea name="areaTexto" id="comentarios" cols="30" rows="10" placeholder="Escribe aquí tus comentarios"></textarea></td>
+                    </tr>
+                    <tr class="respuesta">
+                        <td><label for="repuesta">Desea recibir<br> respuesta por:</br></label></td>
+                        <td><input type="radio" name="respuesta" id="email">e-mail<br><input type="radio" name="respuesta" id="tfno">Teléfono</td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+<!--************************CAPA PIE DE PÁGINA***************************************************************************************************************************************************-->
+    <footer>
+
+        <address>
+            <div id="piePagina">
+                <div id="infoEmpresa">
+                    <h4>Llegaya.SL</h4>
+                    <img src="./img/mapa.png">
+                    Poligono Industrial Fuente Granada Parcela nº25
+                    <br>
+                    <img src="./img/call.png">
+                    <span>660 589 785</span>
+                    <img id="logoMail" src="./img/email.png">
+                    <span>info@llegaya.com</span>
+                    
+                </div>
+                <div id="infoAutor">
+                    <h4>Datos autor</h4>
+                    <span>Ignacio Rueda Delgado</span>
+                    <br>
+                    <a href="https://creativecommons.org/about/" target="_blank"><img src="./img/creative-commons.png"></a>
+                </div>
+            </div>
+        </address>
+    </footer>
+
+
+    <script type="text/javascript">
+        function ShowContent(content) {
+            document.getElementById("Inicio").style.display = 'none';/*style.display = 'none' supone ocultar todo el elemento*/
+            document.getElementById("Servicios").style.display = 'none';
+            document.getElementById("Contacto").style.display = 'none';
+            document.getElementById(content).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
